@@ -4,7 +4,7 @@ import { loadCatalog } from './api.js';
 import { DEFAULT_FILTERS, debounce, filterCourses, sortCourses, readFilters, buildQueryString, countByLevel } from './utils.js';
 import { showLoading, showMessage, clearStatus, renderCourses, renderSummary } from './ui.js';
 
-// ----- Page elements -----
+// --- Page elements ---
 const searchInput = document.getElementById('search');
 const levelSelect = document.getElementById('level');
 const sortSelect = document.getElementById('sort');
