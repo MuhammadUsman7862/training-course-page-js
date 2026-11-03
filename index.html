@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bloomrix Summer Internship - Training Courses</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="#top">Bloomrix Training</a>
+    <nav class="main-nav">
+      <a href="#courses">Courses</a>
+      <a href="#lesson">Lesson</a>
+      <a href="#plans">Plans</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Summer Internship Training Program</h1>
+        <p>
+          Learn HTML, CSS, JavaScript, PHP, Laravel and System Design
+          through short lessons and weekly practical tasks.
+        </p>
+        <a class="btn" href="#courses">Browse courses</a>
+        <a class="btn btn-light" href="#plans">View plans</a>
+      </div>
+      <img class="hero-img" src="profile-photo.jpg" alt="Muhammad Usman, intern at Bloomrix">
+    </section>
+
+    <section class="section" id="courses">
+      <h2>Our Courses</h2>
+      <noscript><p>Please turn on JavaScript to see the courses.</p></noscript>
+
+      <form class="controls" id="controls" role="search">
+        <p class="control">
+          <label for="search">Search</label>
+          <input type="search" id="search" placeholder="e.g. java" autocomplete="off">
+        </p>
+        <p class="control">
+          <label for="level">Level</label>
+          <select id="level">
+            <option value="all">All levels</option>
+            <option value="Beginner">Beginner</option>
+            <option value="Intermediate">Intermediate</option>
+            <option value="Advanced">Advanced</option>
+          </select>
+        </p>
+        <p class="control">
+          <label for="sort">Sort by</label>
+          <select id="sort">
+            <option value="title">Title (A to Z)</option>
+            <option value="weeks">Duration (shortest first)</option>
+            <option value="score">Score (highest first)</option>
+          </select>
+        </p>
+        <p class="control"><button type="button" class="btn" id="reload">Reload data</button></p>
+      </form>
+
+      <p class="summary" id="summary" aria-live="polite"></p>
+      <div id="status" aria-live="polite"></div>
+      <div class="card-grid" id="course-list"></div>
+    </section>
+
+    <section class="section lesson" id="lesson">
+      <article class="lesson-main">
+        <h2>Lesson 1: Your First Web Page</h2>
+        <p class="byline">
+          <img class="avatar" src="profile-photo.jpg" alt="Muhammad Usman">
+          <span>By Muhammad Usman | 15 min read</span>
+        </p>
+        <p>
+          Every web page starts with HTML. It describes what is on the page,
+          and CSS describes how it looks. In this lesson you build a simple
+          profile page and style it.
+        </p>
+        <h3>What you will do</h3>
+        <ol>
+          <li>Create an index.html file with a header, main and footer.</li>
+          <li>Add headings, paragraphs and a list of your skills.</li>
+          <li>Link a style.css file and change the colours and fonts.</li>
+          <li>Open the page in the browser and inspect it with DevTools.</li>
+        </ol>
+        <h3>Tip</h3>
+        <p>Save often and refresh the browser after every small change.</p>
+      </article>
+
+      <aside class="lesson-sidebar">
+        <h3>Milestones</h3>
+        <ul>
+          <li>Orientation Complete</li>
+          <li>Onboarding</li>
+          <li>First Project Review</li>
+          <li>Midpoint Check-in</li>
+          <li>Final Review</li>
+          <li>Certification</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="section" id="plans">
+      <h2>Program Summary</h2>
+      <div class="plan-grid">
+
+        <article class="plan">
+          <h3>Starter</h3>
+          <p class="plan-length">4 weeks</p>
+          <ul>
+            <li>HTML5 and CSS3</li>
+            <li>1 practice project</li>
+            <li>Mentor feedback</li>
+          </ul>
+          <a class="btn" href="#contact">Choose Starter</a>
+        </article>
+
+        <article class="plan plan-featured">
+          <h3>Standard</h3>
+          <p class="plan-length">8 weeks</p>
+          <ul>
+            <li>Everything in Starter</li>
+            <li>JavaScript and PHP</li>
+            <li>2 practice projects</li>
+          </ul>
+          <a class="btn" href="#contact">Choose Standard</a>
+        </article>
+
+        <article class="plan">
+          <h3>Full Track</h3>
+          <p class="plan-length">12 weeks</p>
+          <ul>
+            <li>Everything in Standard</li>
+            <li>Laravel and System Design</li>
+            <li>Final project and certificate</li>
+          </ul>
+          <a class="btn" href="#contact">Choose Full Track</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <div>
+        <h3>Bloomrix Training</h3>
+        <p>Summer internship program for new web developers.</p>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#lesson">Lesson</a></li>
+          <li><a href="#plans">Plans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li>Wah Cantt, Pakistan</li>
+          <li><a href="https://github.com/MuhammadUsman7862">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">&copy; 2026 Bloomrix Training. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

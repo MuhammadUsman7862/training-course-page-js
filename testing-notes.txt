@@ -1,0 +1,31 @@
+Testing Notes - Task 13 (Modern JavaScript and Async)
+
+DRAFT: I wrote these from an automated test of the code. Run the page with a local server
+(Live Server), repeat each check yourself with F12 open, and change any line that does not match what you see.
+
+Loading state
+What I saw: a spinner and "Loading courses..." with a Cancel button appear for about 1 second, then 8 course cards.
+
+Search, filter and sort
+What I saw: typing "java" shows 2 cards after a short pause (debounce). Level "Advanced" shows System Design only.
+Sorting by Score puts the highest score first, Duration puts the shortest first.
+
+URL (URLSearchParams)
+What I saw: the address changes to ?search=java&sort=score. Opening that link directly fills the controls and shows the same result.
+Clear filters removes the query from the address.
+
+Cancel (AbortController)
+What I saw: clicking Cancel while loading shows "Loading cancelled" with a "Load again" button. Clicking Reload twice fast only shows the newest result.
+
+Empty states
+What I saw: searching "zzz" shows "No matching courses" with a Clear filters button.
+To test "no records": change courses.json to [] and reload. It shows "No courses yet".
+
+Error states (try each, then put the files back)
+- Rename courses.json: "The server answered 404".
+- Put broken text in courses.json: "does not contain valid JSON".
+- Change courses.json to {}: "Unexpected data".
+- Add a course without a title: it is skipped and the summary says "1 invalid record(s) were skipped".
+
+Network tab (DevTools)
+What I saw: courses.json and instructors.json are requested together (Promise.all).

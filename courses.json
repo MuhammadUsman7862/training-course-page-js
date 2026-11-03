@@ -1,0 +1,10 @@
+[
+  { "id": 1, "title": "HTML5", "description": "Page structure, text, links, images, lists and forms.", "instructorId": 1, "weeks": 2, "level": "Beginner", "score": 4.5 },
+  { "id": 2, "title": "CSS3", "description": "Selectors, the box model, Flexbox, Grid and responsive design.", "instructorId": 1, "weeks": 3, "level": "Beginner", "score": 4.6 },
+  { "id": 3, "title": "Git and GitHub", "description": "Save your work, push code and work with a remote repository.", "instructorId": 1, "weeks": 1, "level": "Beginner", "score": 4.8 },
+  { "id": 4, "title": "JavaScript", "description": "Variables, functions, the DOM and events.", "instructorId": 2, "weeks": 3, "level": "Intermediate", "score": 4.7 },
+  { "id": 5, "title": "Modern JavaScript and Async", "description": "Modules, promises, async/await and the Fetch API.", "instructorId": 2, "weeks": 2, "level": "Intermediate", "score": 4.4 },
+  { "id": 6, "title": "PHP", "description": "Server-side basics, forms handling and working with data.", "instructorId": 3, "weeks": 3, "level": "Intermediate", "score": 4.2 },
+  { "id": 7, "title": "Laravel", "description": "Routing, controllers, views and building a small web app.", "instructorId": 3, "weeks": 4, "level": "Intermediate", "score": 4.3 },
+  { "id": 8, "title": "System Design", "description": "Planning how the parts of a larger application fit together.", "instructorId": 3, "weeks": 2, "level": "Advanced", "score": 4.1 }
+]
